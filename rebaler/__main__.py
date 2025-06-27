@@ -30,7 +30,7 @@ from .alignment import Alignment
 from . import log
 from .unitig_graph import UnitigGraph
 
-__version__ = '0.2.0'
+__version__ = "0.2.1"
 
 ROUND_COUNT = 10
 SHRED_SIZE = 20000
