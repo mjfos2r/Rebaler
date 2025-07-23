@@ -12,7 +12,7 @@ license = { text = "GPL" }
 authors = [
   { name = "Ryan Wick", email = "rrwick@gmail.com" }
 ]
-dependencies = ["biopython==1.84"]
+dependencies = ["biopython==1.85"]
 urls = { Homepage = "http://github.com/rrwick/rebaler" }
 
 [project.scripts]
