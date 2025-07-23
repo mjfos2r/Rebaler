@@ -99,7 +99,7 @@ def remove_formatting(text):
 
 def remove_dim_formatting(text):
     test = str(text or '')
-    return re.sub(r'\033[2m', '', text)
+    return re.sub(r'\033\[2m', '', text)
 
 
 def get_terminal_size_stderr(fallback=(80, 24)):
