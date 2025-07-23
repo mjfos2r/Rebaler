@@ -93,10 +93,12 @@ def dim(text):
 
 
 def remove_formatting(text):
+    test = str(text or '')
     return re.sub(r'\033.*?m', '', text)
 
 
 def remove_dim_formatting(text):
+    test = str(text or '')
     return re.sub(r'\033[2m', '', text)
 
 
