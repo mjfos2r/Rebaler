@@ -309,7 +309,7 @@ def print_table(table, alignments='', max_col_width=30, col_separation=3, indent
             for text, colour_name in sub_colour.items():
                 row_str = row_str.replace(text, colour(text, colour_name))
             if j < row_rows - 1 and UNDERLINE in row_str:
-                row_str = re.sub(r'\033[4m', '', row_str)
+                row_str = re.sub(r'\033\[4m', '', row_str)
             if return_str:
                 full_table_str += indenter + row_str + '\n'
             else:
