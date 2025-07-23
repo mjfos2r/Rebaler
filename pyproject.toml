@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Rebaler"
+dynamic = ["version"]
+description = "Reference-based consensus assembler for longread data"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "GPL" }
+authors = [
+  { name = "Ryan Wick", email = "rrwick@gmail.com" }
+]
+dependencies = ["biopython==1.84"]
+urls = { Homepage = "http://github.com/rrwick/rebaler" }
+
+[project.scripts]
+rebaler = "rebaler.__main__:main"
+
+[tool.setuptools]
+packages = ["rebaler"]
+
+[tool.setuptools.dynamic]
+version = { attr = "rebaler.__main__.__version__" }
